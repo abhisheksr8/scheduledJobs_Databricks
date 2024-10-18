@@ -1,0 +1,82 @@
+{
+  "id" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled",
+  "metainfo" : {
+    "label" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled##b5sjKjJy" : {
+      "id" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled##b5sjKjJy",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM testSeedSchdRun_Automation_Databricks_Project_AirflowScheduled\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gxdm0KE6",
+          "slug" : "testSeedSchdRun_Automation_Databricks_Project_AirflowScheduled"
+        } ],
+        "outputs" : [ {
+          "id" : "hVUGuZsY",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "KCjJztsSIx4gOtjtMKATV" : {
+      "id" : "KCjJztsSIx4gOtjtMKATV",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "testSeedSchdRun_Automation_Databricks_Project_AirflowScheduled",
+        "slug" : "testSeedSchdRun_Automation_Databricks_Project_AirflowScheduled",
+        "x" : -520,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "testSeedSchdRun_Automation_Databricks_Project_AirflowScheduled",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "of87w-QhWpk-lrWNjiRxn",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "pZCiiis0ONEmAidjTPUfw",
+    "source" : "KCjJztsSIx4gOtjtMKATV",
+    "sourcePort" : "of87w-QhWpk-lrWNjiRxn",
+    "target" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled##b5sjKjJy",
+    "targetPort" : "gxdm0KE6"
+  } ],
+  "component" : "Model"
+}
