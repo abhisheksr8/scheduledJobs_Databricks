@@ -1,0 +1,98 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "9",
+    "jobId" : "jobs/SQL_Databricks_Scheduled_Databricks",
+    "name" : "SQL_Databricks_Scheduled_Databricks",
+    "schedule" : "0 0/5 9-10 5 5 ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : true,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "kD6H7S_9TQ9ci-5pAZgOZ$$v6LVcaJM-cL5bgKSriRLv" : {
+      "id" : "kD6H7S_9TQ9ci-5pAZgOZ$$v6LVcaJM-cL5bgKSriRLv",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -580,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GGQQlisz8qM0NHZRsIQsy$$cBt-g6n2I6oqjqmBY_ULp",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "6kQ9Li88KTq0VOF0X7VYi$$oE4bkRC22rZXRy5d2920F",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "retries" : 1,
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "entityId" : "15772/.prophecy/metadata/sqlmodels/testModelSchdRun_Automation_Databricks_Project_AirflowScheduled",
+        "execSeed" : true,
+        "execRun" : false,
+        "gitEntity" : "branch",
+        "customVersion" : true,
+        "projectId" : "15772",
+        "runOnlyModel" : "true",
+        "loadingModels" : false,
+        "entityName" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled",
+        "gitEntityValueTag" : null,
+        "profile" : "run_profile",
+        "sqlFabricId" : "9",
+        "gitEntityValue" : "main",
+        "execDeps" : false,
+        "gitEntityValueCommit" : null,
+        "sqlProjectType" : "databricks",
+        "gitEntityValueBranch" : "main",
+        "execTest" : true,
+        "currentProjectModels" : [ {
+          "label" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled",
+          "value" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled",
+          "id" : "15772/.prophecy/metadata/sqlmodels/testModelSchdRun_Automation_Databricks_Project_AirflowScheduled",
+          "name" : "testModelSchdRun_Automation_Databricks_Project_AirflowScheduled"
+        } ],
+        "entityKind" : "model"
+      }
+    }
+  },
+  "connections" : [ ]
+}
